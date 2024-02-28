@@ -43,6 +43,48 @@ function populateArea() {
   }
 }
 
+// Auto
+function populateVariants() {
+  var carName = document.getElementById("carName").value;
+  var carVariant = document.getElementById("carVariant");
+
+  // Clear previous options
+  carVariant.innerHTML = "";
+
+  switch (carName) {
+    case "car1":
+      addOption(carVariant, "carVariant1", "Liana");
+      addOption(carVariant, "carVariant2", "Alto");
+      addOption(carVariant, "carVariant3", "Alto VX");
+      addOption(carVariant, "carVariant4", "Alto VXR");
+      break;
+
+    case "car2":
+      addOption(carVariant, "carVariant5", "Passo");
+      addOption(carVariant, "carVariant6", "Corolla XLI");
+      addOption(carVariant, "carVariant7", "Corolla GLI");
+      addOption(carVariant, "carVariant8", "Fortuner");
+      break;
+
+    case "car3":
+      addOption(carVariant, "carVariant9", "City");
+      addOption(carVariant, "carVariant10", "Civic");
+      addOption(carVariant, "carVariant11", "BR-V");
+      addOption(carVariant, "carVariant12", "HR-V");
+      break;
+
+    case "car4":
+      addOption(carVariant, "carVariant13", "Stonic");
+      addOption(carVariant, "carVariant14", "Sorento");
+      addOption(carVariant, "carVariant15", "Picanto");
+      
+      break;
+
+    default:
+      addOption(carVariant, "", "Select Variant");
+  }
+}
+
 function addOption(selectElement, value, text) {
   var option = document.createElement("option");
   option.value = value;
