@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Finance</title>
+</head>
+<link rel="stylesheet" href="../../css/style.css">
+<style>
+body{
+  background-color: beige;
+}
+
+</style>
+<body>
+  <h1 style="text-align: center;">Auto Finance</h1>
+  <H1>
+    <u>Procedure</u>
+  </H1>
+  <ul>
+    <li> Approval time will be depend on case to case  </li>
+
+      <li>       After auto financing case approval the customer have to go to manufacturer to select his vehicle.</li>
+      
+        <li>       Bank will pay the financing amount in the form of P.O (Pay order) </li>
+      
+          <li>       The manufacturer will give him the vehicle delivery time. Tracker must be installed at showroom before delivery of vehicle. </li>
+      
+            <li>       Bank Finance Autos on (Musharka & Ijara basis), in which first Contract is Musharka (Partnership) then Ijara (Rent) will be applicable to the customer.</li>
+  </ul>
+
+  <h1><u> Delivery:</u></h1>
+  <Ul>
+    <li>    Deliver time also will be depend on case to case</li>
+
+    <li>If Customer selects his own Manufacturer to purchase a car so, bank is not liable in case of late delivery.</li>
+
+    <li>Documentations regarding Insurance & Tracker installation must be done before delivery. </li>
+
+    <li>  Customer can avail Delivery Acceptance form from Showroom</li>
+
+    
+  </Ul>
+
+  <h1><u>Registration:</u></h1>
+  <ul>
+    <li>Manufacturer will provide the sale certificate and invoice to the Customer.  </li>
+
+    <li>Vendor will responsible for registration.</li>
+
+    <li>Vendor will provide the number plate and running part to the customer and original book and copy of running part to the SC. (Its take 60 working days almost about 2 Month after delivery)</li>
+
+    </ul>
+
+  <h1><u>Requirement:</u></h1>
+  <ol>
+    <li> Copy of Primary applicant’s CNIC.  </li>
+
+      <li>     Copy of Co-applicant’s CNIC (If applicable). </li>
+      
+        <li>   Two passport size photographs.  </li>
+      
+          <li>   Latest salary slip/ Proof of income.  </li>
+      
+            <li>     6 Months Bank Statement (If applicable). </li>
+      
+              <li>Bank Statement (If applicable).</li>
+
+  </ol>
+
+ <br><br>
+
+ <h2 style="text-align: center; color: blueviolet;"><u>Auto Finance Calculator</u></h2><br>
+
+ <form onsubmit="calculateMonthlyPayment(); return false;">
+    <label for="carCondition">Car Condition:</label>
+    <select id="carCondition">
+      <option value="used">Used</option>
+      <option value="unused">Unused</option>
+    </select>
+
+    <label for="carName">Car Name:</label>
+    <select id="carName" onchange="populateVariants()">
+      <option value="">Select Car Name</option>
+      <option value="car1">Suzuki</option>
+      <option value="car2">Toyota</option>
+      <option value="car3">Honda</option>
+      <option value="car4">KIA</option>
+    </select>
+
+    <label for="carVariant">Car Variant:</label>
+    <select id="carVariant">
+      <option value="">Select Car Variant</option>
+    </select>
+
+    <label for="modelYear">Model Year:</label>
+    <input type="text" id="modelYear">
+
+    <label for="tenure">Tenure (in months):</label>
+    <input type="text" id="tenure">
+
+    <label for="rate">Rate (%):</label>
+    <input type="text" id="rate">
+
+    <label for="financingAmount">Financing Amount Required:</label>
+    <input type="text" id="financingAmount">
+
+    <label for="actualPrice">Actual Price:</label>
+    <input type="text" id="actualPrice">
+
+    <input type="submit" value="Calculate">
+  </form>
+  <br><br>
+<script src="../../app.js"></script>
+</body>
+
+</html>

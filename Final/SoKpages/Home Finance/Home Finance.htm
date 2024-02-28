@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Finance</title>
+</head>
+<link rel="stylesheet" href="../../css/style.css">
+
+  <body style="background-color: antiquewhite;">
+
+    <H1 style="text-align: center; text-shadow: 2cap;"><u>Home Finance</u></H1>
+  <H1>
+    <u>Procedure</u>
+  </H1>
+  <ul>
+    <li> E.A.M.U (External Agency Management & Verification Unit) deals with the Home financing, once they approved. The
+      case then it comes to the Service Centre. </li>
+
+    <li> Relationship Officer will visit and help the customer to complete the Home Finance application form. </li>
+
+    <li> Once application has been analyzed and approved an offer letter will be received stating the terms of offer and
+      the finance amount DIBPL is willing to provide. </li>
+
+    <li> On completion of these steps, the amount stated in the offer letter which is DIBPL’s Contribution towards
+      “Musharaka” will be deposited by DIBPL to Musharaka account. </li>
+
+    <li> Customer will be registered as the legal owner of the property at the local registrar’s office. </li>
+
+    <li> Customer will then be required to execute a lease agreement (Payment Agreement) to lease DIBPL’s undivided
+      share of the property DIBPL for an agreed number of years against monthly rentals. To complete the transaction
+      customer would sign the remaining transaction documents. </li>
+
+    <li> After successful completion of Lease, DIBPL will sell its undivided share in the property to the customer for a
+      nominal price.</li>
+  </ul>
+
+  <h1><u> Eligibility:</u></h1>
+  <Ul>
+    <li> Pakistani National. </li>
+
+    <li>Age 25-65. </li>
+
+    <li>Minimum monthly net income of Rs.40,000/-. </li>
+
+    <li>Self-employed, Businessmen/Professionals or Salaried individuals.</li>
+
+  </Ul>
+
+  <h1><u>Property Eligibility criteria:</u></h1>
+  <ul>
+    <li>The qualifying property must be located in Cities: (Karachi, Lahore, Islamabad, Rawalpindi and Faisalabad) of
+      Pakistan. </li>
+
+    <li>he minimum value of the property must be greater than Rs.2, 000,000/-.</li>
+
+
+  </ul>
+
+  <h1><u>Requirement:</u></h1>
+  <ol>
+    <li> Copy of Primary applicant’s CNIC. </li>
+
+    <li> Copy of Co-applicant’s CNIC (If applicable). </li>
+
+    <li> Two passport size photographs. </li>
+
+    <li> Latest salary slip/ Proof of income. </li>
+
+    <li> 6 Months Bank Statement (If applicable). </li>
+
+    <li>Bank Statement (If applicable).</li>
+    
+    <li>Tax Returns.</li>
+  </ol>
+
+
+
+  <!-- Calculator -->
+  <h2 style="text-align: center; color: blueviolet;"><u>House Finance Calculator</u></h2><br>
+
+
+  <form onsubmit="calculateMonthlyPayment(); return false;">
+    
+
+    <label for="city">City:</label>
+    <select id="city" onchange="populateArea()">
+      <option value="">Select City</option>
+      <option value="city1">Faisalabad</option>
+      <option value="city2">Lahore</option>
+      <option value="city3">Islamabad</option>
+      <option value="city4">Karachi</option>
+    </select>
+
+    <label for="area">Select Area</label>
+    <select id="area">
+      <option value="">Select Area</option>
+    </select>
+
+
+
+    <label for="tenure">Tenure (in months):</label>
+    <input type="text" id="tenure">
+
+    <label for="rate">Rate (%):</label>
+    <input type="text" id="rate">
+
+    <label for="financingAmount">Financing Amount Required:</label>
+    <input type="text" id="financingAmount">
+
+    <label for="actualPrice">Actual Price:</label>
+    <input type="text" id="actualPrice">
+
+    <input type="submit" value="Calculate">
+  </form>
+
+  <br><br>
+<script src="../../app.js"></script>
+</body>
+
+</html>

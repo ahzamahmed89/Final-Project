@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance</title>
+
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+ 
+
+
+<body style="background-color: antiquewhite;">
+
+  <H1 style="text-align: center; text-shadow: 2cap;"><u>Personal Finance</u></H1>
+  <H1><u>Strategy</u></H1>
+
+  <P>Brand positioning revolves around the fact that this product allows the customer to fulfill their financial obligation in a sharia complaint manner</P>
+ 
+  <H1><u>Tenure</u></H1>
+
+  <P>Min: 6 months & Max: 60 months </P>
+
+
+  <ul>
+    <li> For Salaried Individual: 35,000/-</li>
+
+    <li> Currently we are not providing to Business persons</li>
+  </ul>
+
+  
+
+  <h1><u>Requirement:</u></h1>
+  <ol>
+    <li> Copy of Primary applicant’s CNIC. </li>
+
+    <li> Copy of Co-applicant’s CNIC (If applicable). </li>
+
+    <li> Two passport size photographs. </li>
+
+    <li> Latest salary slip/ Proof of income. </li>
+
+    <li> 6 Months Bank Statement (If applicable). </li>
+
+    <li> Fill and sign  the attached  application form</li>
+    
+    <li>Tax Returns.</li>
+  </ol>
+
+
+   <!-- Calculator -->
+   <h2 style="text-align: center; color: blueviolet;"><u>Personal Finance Calculator</u></h2><br>
+
+
+   <form onsubmit="calculateMonthlyPayment(); return false;">
+     
+ 
+     <label for="Reason">Reason:</label>
+     <select id="city" onchange="populateArea()">
+       <option value="">Select Reason</option>
+       <option value="reason1">Daughter Marriage</option>
+       <option value="reason2">Education</option>
+       <option value="reason3">Loan repayment</option>
+       <option value="reason4">House renovation</option>
+     </select>
+ 
+      
+     <label for="tenure">Tenure (in months):</label>
+     <input type="text" id="tenure">
+ 
+     <label for="rate">Rate (%):</label>
+     <input type="text" id="rate">
+ 
+     <label for="financingAmount">Financing Amount Required:</label>
+     <input type="text" id="financingAmount">
+ 
+     <label for="actualPrice">Actual Price:</label>
+     <input type="text" id="actualPrice">
+ 
+     <input type="submit" value="Calculate">
+   </form>
+   <br><br>
+ <script src="../../app.js"></script>
+
+
+</body>
+
+</html>
